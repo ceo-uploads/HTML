@@ -1,0 +1,9 @@
+body {
+    display: flex
+}
+
+.button {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
