@@ -1,0 +1,190 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* ===== Login Card ===== */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2.5em 2em;
+    background: rgba(23, 23, 23, 0.8);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.form:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ===== Input Fields ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  font-weight: bold;
+  margin: 1em;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.field:hover {
+    border-color: #6a5acd;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #aaa;
+    transition: fill 0.3s ease;
+}
+
+.field:hover .input-icon {
+    fill: #fff;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    flex: 1;
+    color: #e0e0e0;
+    font-size: 0.95em;
+}
+
+/* ===== Buttons ===== */
+.form .btn {
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+    margin-top: 1.8em;
+}
+
+.button1,
+.button2,
+.button3 {
+    padding: 0.6em 1.6em;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #252525;
+    color: white;
+}
+
+.button1:hover,
+.button2:hover {
+    background: #6a5acd;
+    box-shadow: 0 4px 15px rgba(106, 90, 205, 0.4);
+}
+
+.button3 {
+    margin: 1.2em;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button3:hover {
+    background: crimson;
+    border-color: crimson;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .form {
+        padding: 2em 1.2em;
+        max-width: 95%;
+    }
+
+    #heading {
+        font-size: 1.3em;
+    }
+
+    .input-field {
+        font-size: 0.9em;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        font-size: 0.85em;
+        padding: 0.5em 1.2em;
+    }
+}
